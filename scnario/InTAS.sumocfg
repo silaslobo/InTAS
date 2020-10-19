@@ -1,0 +1,38 @@
+<configuration>
+	<input>
+		<net-file value="ingolstadt.net.xml"/>
+		<route-files value="InTAS.rou.xml"/>
+		<additional-files value="BusStations.add.xml,InTAS_E1.add.xml,InTAS.poly.xml"/>
+	</input>
+	<output>
+		<summary-output value="InTAS.simulation.summary.xml"/>
+		<tripinfo-output value="InTAS.simulation.tripinfo.xml"/>
+		<statistic-output value="InTAS.simulation.statistic.xml"/>
+	</output>
+	<time>
+		<begin value="0"/>
+		<step-length value="0.1"/>
+		<end value="86400"/>
+	</time>
+	<processing>
+		<route-steps value="200"/>
+		<threads value="2"/>
+		<ignore-junction-blocker value="15"/>
+	    	<time-to-teleport value="300"/>
+		<time-to-teleport.highways value="300"/>
+        	<max-depart-delay value="300"/>
+		<default.carfollowmodel value="Krauss"/>
+	</processing>
+	<routing>
+		<routing-algorithm value="dijkstra"/>
+		<device.rerouting.probability value="0.82"/>
+		<device.rerouting.period value="300" />
+		<device.rerouting.threads value="2"/>
+		<device.rerouting.synchronize value="true"/>
+	</routing>
+	<report>
+        	<verbose value="true"/>
+		<no-warnings value="true"/>
+	        <log value="InTAS.simulation.log"/>
+	</report>
+</configuration>
