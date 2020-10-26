@@ -1,8 +1,8 @@
 <configuration>
 	<input>
 		<net-file value="ingolstadt.net.xml"/>
-		<route-files value="InTAS.rou.xml"/>
-		<additional-files value="BusStations.add.xml,InTAS_E1.add.xml,InTAS.poly.xml"/>
+		<route-files value="routes/InTAS_routes2.rou.xml,routes/InTAS_routes3.rou.xml,routes/InTAS_routes4.rou.xml,routes/InTAS_routes5.rou.xml,routes/InTAS_routes6.rou.xml,routes/InTAS_routes7.rou.xml,routes/InTAS_routes8.rou.xml,routes/InTAS_routes9.rou.xml,routes/InTAS_routes10.rou.xml,routes/InTAS_routes11.rou.xml,routes/InTAS_routes12.rou.xml,routes/InTAS_routes13.rou.xml,routes/InTAS_routes14.rou.xml,routes/InTAS_routes15.rou.xml,routes/InTAS_routes16.rou.xml,routes/InTAS_routes17.rou.xml"/>
+		<additional-files value="BusStations.add.xml,InTAS_E1.add.xml,buildings.poly.xml"/>
 	</input>
 	<output>
 		<summary-output value="InTAS.simulation.summary.xml"/>
@@ -16,7 +16,7 @@
 	</time>
 	<processing>
 		<route-steps value="200"/>
-		<threads value="2"/>
+		<threads value="4"/>
 		<ignore-junction-blocker value="15"/>
 	    	<time-to-teleport value="300"/>
 		<time-to-teleport.highways value="300"/>
@@ -27,7 +27,7 @@
 		<routing-algorithm value="dijkstra"/>
 		<device.rerouting.probability value="0.82"/>
 		<device.rerouting.period value="300" />
-		<device.rerouting.threads value="2"/>
+		<device.rerouting.threads value="4"/>
 		<device.rerouting.synchronize value="true"/>
 	</routing>
 	<report>
