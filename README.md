@@ -12,7 +12,7 @@ InTAS is the realistic Ingolstadt traffic scenario for SUMO. This scenario compr
 
 
 ## Actual State
-- **Validation:** 24 points of measurment
+- **Validation:** 24 points of traffic measurment
 - **Simulation of Traffic Light System (TLS):** 20 TLS
 - **Actual Scenario Error (NRMSE):** 0.33
 
