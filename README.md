@@ -1,6 +1,7 @@
 # InTAS
 InTAS is the realistic Ingolstadt traffic scenario for SUMO. This scenario comprises the following features:
 
+- **Modeled and Validated with real traffic numbers**
 - 24 hours of simulation
 - Actual road network based on the city of Ingolstadt
 - Street categories for VANETs simulation: *tunnel*, *under.building*, *under.bridge*
@@ -9,7 +10,6 @@ InTAS is the realistic Ingolstadt traffic scenario for SUMO. This scenario compr
 - Simulation of real Traffic Light Systems
 - Buildings shape and location 
 - Simulation of public transport system: *real bus routes with the actual time-table*
-- **Modeled and Validated with real traffic numbers**
 
 You can watch [InTAS](https://www.youtube.com/watch?v=UgPeBxXzDHc) presentation for the SUMO User Conference 2020. 
 
