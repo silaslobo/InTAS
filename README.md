@@ -21,5 +21,7 @@ You can watch [InTAS](https://www.youtube.com/watch?v=UgPeBxXzDHc) presentation 
 ## Authors
 Development of InTAS is part of ongoing research work at [Technische Hochschule Ingolstadt](https://www.thi.de/en/research/carissma/laboratories/car2x-laboratory). Maintenance is coordinated by Silas Lobo. Contributions are happily accepted.
 
+Contact: Silas Lobo [silascorreia.lobo@thi.de]
+
 ## License
 InTAS is licensed under **GNU General Public License v3.0**, see [lisence file](https://github.com/silaslobo/InTAS/blob/master/LICENSE) for details.
