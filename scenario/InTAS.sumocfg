@@ -10,8 +10,8 @@
 <configuration>
 	<input>
 		<net-file value="ingolstadt.net.xml"/>
-		<route-files value="routes/InTAS_routes2.rou.xml,routes/InTAS_routes3.rou.xml,routes/InTAS_routes4.rou.xml,routes/InTAS_routes5.rou.xml,routes/InTAS_routes6.rou.xml,routes/InTAS_routes7.rou.xml,routes/InTAS_routes8.rou.xml,routes/InTAS_routes9.rou.xml,routes/InTAS_routes10.rou.xml,routes/InTAS_routes11.rou.xml,routes/InTAS_routes12.rou.xml,routes/InTAS_routes13.rou.xml,routes/InTAS_routes14.rou.xml,routes/InTAS_routes15.rou.xml,routes/InTAS_routes16.rou.xml,routes/InTAS_routes17.rou.xml"/>
-		<additional-files value="BusStations.add.xml,InTAS_E1.add.xml,buildings.poly.xml"/>
+		<route-files value="routes/BusRoutes.flow.xml,routes/InTAS_001.rou.xml,routes/InTAS_002.rou.xml,routes/InTAS_003.rou.xml,routes/InTAS_004.rou.xml,routes/InTAS_005.rou.xml,routes/InTAS_006.rou.xml,routes/InTAS_007.rou.xml,routes/InTAS_008.rou.xml,routes/InTAS_009.rou.xml,routes/InTAS_010.rou.xml,routes/InTAS_011.rou.xml,routes/InTAS_012.rou.xml,routes/InTAS_013.rou.xml,routes/InTAS_014.rou.xml,routes/InTAS_015.rou.xml,routes/InTAS_016.rou.xml,routes/InTAS_017.rou.xml,routes/InTAS_018.rou.xml,routes/InTAS_019.rou.xml,routes/InTAS_020.rou.xml,routes/InTAS_021.rou.xml,routes/InTAS_022.rou.xml"/>
+		<additional-files value="BusStations.add.xml,InTAS_E1.add.xml,InTAS_TEST.poly.xml"/>
 	</input>
 	<output>
 		<summary-output value="InTAS.simulation.summary.xml"/>
@@ -25,7 +25,7 @@
 	</time>
 	<processing>
 		<route-steps value="200"/>
-		<threads value="4"/>
+		<threads value="10"/>
 		<ignore-junction-blocker value="15"/>
 	    	<time-to-teleport value="300"/>
 		<time-to-teleport.highways value="300"/>
@@ -34,9 +34,10 @@
 	</processing>
 	<routing>
 		<routing-algorithm value="dijkstra"/>
+		<device.rerouting.explicit value= "default_001,default_002,default_003,default_004,default_005,default_006,default_007,default_008,default_009,default_010,default_011,default_012,default_013,default_014,default_015,default_016,default_017,default_018,default_019,default_020,default_021,default_022,random_001,random_002,random_003,random_004,random_005,random_006,random_007,random_008,random_009,random_010,random_011,random_012,random_013,random_014,random_015,random_016,random_017,random_018,random_019,random_020,random_021,random_022"/>
 		<device.rerouting.probability value="0.82"/>
 		<device.rerouting.period value="300" />
-		<device.rerouting.threads value="4"/>
+		<device.rerouting.threads value="10"/>
 		<device.rerouting.synchronize value="true"/>
 	</routing>
 	<report>
