@@ -20,6 +20,23 @@ You can watch [InTAS](https://www.youtube.com/watch?v=UgPeBxXzDHc) presentation 
 - **Simulation of Traffic Light System (TLS):** 20 TLS
 - **Actual Scenario Error (NRMSE):** 0.33
 
+## How To 
+InTAS can be lauched from de cofiguration file:
+- ```sumo -c InTAS_buildings.sumocfg```, considering:
+  - *buildings*
+  - *bus stops*
+  - *E1 detectors*
+- ```sumo-gui -c InTAS_full_poly.sumocfg```, which provides full polygon bringing a nicer visualization:
+  - *buildings*
+  - *bus stops*
+  - *E1 detectors*
+  - *amenity*
+  - *land use*
+  - *water*
+  - *leisure*
+  - *forest*
+![InTAS full poly](https://github.com/silaslobo/InTAS/blob/master/InTAS.png)
+
 ## Authors
 Development of InTAS is part of ongoing research work at [Technische Hochschule Ingolstadt](https://www.thi.de/en/research/carissma/laboratories/car2x-laboratory). Maintenance is coordinated by Silas Lobo. Contributions are happily accepted.
 
