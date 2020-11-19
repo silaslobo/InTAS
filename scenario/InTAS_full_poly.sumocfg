@@ -11,7 +11,7 @@
 	<input>
 		<net-file value="ingolstadt.net.xml"/>
 		<route-files value="routes/BusRoutes.flow.xml,routes/InTAS_001.rou.xml,routes/InTAS_002.rou.xml,routes/InTAS_003.rou.xml,routes/InTAS_004.rou.xml,routes/InTAS_005.rou.xml,routes/InTAS_006.rou.xml,routes/InTAS_007.rou.xml,routes/InTAS_008.rou.xml,routes/InTAS_009.rou.xml,routes/InTAS_010.rou.xml,routes/InTAS_011.rou.xml,routes/InTAS_012.rou.xml,routes/InTAS_013.rou.xml,routes/InTAS_014.rou.xml,routes/InTAS_015.rou.xml,routes/InTAS_016.rou.xml,routes/InTAS_017.rou.xml,routes/InTAS_018.rou.xml,routes/InTAS_019.rou.xml,routes/InTAS_020.rou.xml,routes/InTAS_021.rou.xml,routes/InTAS_022.rou.xml"/>
-		<additional-files value="BusStations.add.xml,InTAS_E1.add.xml,InTAS_TEST.poly.xml"/>
+		<additional-files value="BusStations.add.xml,InTAS_E1.add.xml,InTAS.poly.xml"/>
 	</input>
 	<output>
 		<summary-output value="InTAS.simulation.summary.xml"/>
