@@ -26,10 +26,8 @@ InTAS can be lauched from de cofiguration file:
   - *buildings*
   - *bus stops*
   - *E1 detectors*
-- ```sumo-gui -c InTAS_full_poly.sumocfg```, which provides full polygon bringing a nicer visualization:
-  - *buildings*
-  - *bus stops*
-  - *E1 detectors*
+  - *parking areas*
+- ```sumo-gui -c InTAS_full_poly.sumocfg```, which provides full polygon bringing a nicer visualization and adds to the previous file:
   - *amenity*
   - *land use*
   - *water*
