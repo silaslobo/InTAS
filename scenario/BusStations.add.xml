@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
 
 <!-- generated on Mi 30 Okt 2019 10:41:34 CET by Eclipse SUMO netedit Version v1_2_0+0619-d7eb694e56
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
@@ -35,7 +35,7 @@
 </configuration>
 -->
 
-<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+<add>
     <busStop id="10" name="Spitzlmühle" lane="-107431496#4_0" friendlyPos="1" startPos="58.23" endPos="73.23"/>
     <busStop id="100" name="Heydeckstraße" lane="64464432#2_0" startPos="17.50" endPos="27.50"/>
     <busStop id="101" name="Fraunhoferstraße" lane="-205182378#6_0" startPos="19.10" endPos="29.10"/>
@@ -441,4 +441,4 @@
     <busStop id="97" name="Zeppelinstraße" lane="-23184143#4_0" friendlyPos="1" startPos="38.94" endPos="53.94"/>
     <busStop id="98" name="Spitalhofstraße" lane="-23184143#0_0" friendlyPos="1" startPos="6.62" endPos="21.62"/>
     <busStop id="99" name="Erletstraße" lane="-22486112#1_0" startPos="68.66" endPos="78.66"/>
-</additional>
+</add>

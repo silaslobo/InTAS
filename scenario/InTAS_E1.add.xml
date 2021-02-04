@@ -1,46 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!-- generated on Mi 12 Aug 2020 14:53:45 CEST by Eclipse SUMO netedit Version 1.6.0
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
-
-    <input>
-        <sumo-net-file value="/home/silas/Desktop/InTAS/Simulation/ingolstadt.net.xml"/>
-    </input>
-
-    <output>
-        <output-file value="/home/silas/Desktop/InTAS/Simulation/ingolstadt.net.xml"/>
-    </output>
-
-    <processing>
-        <geometry.min-radius.fix.railways value="false"/>
-        <geometry.max-grade.fix value="false"/>
-        <offset.disable-normalization value="true"/>
-        <lefthand value="false"/>
-    </processing>
-
-    <junctions>
-        <no-turnarounds value="true"/>
-        <junctions.corner-detail value="5"/>
-        <junctions.limit-turn-speed value="5.5"/>
-        <rectangular-lane-cut value="false"/>
-    </junctions>
-
-    <pedestrian>
-        <walkingareas value="false"/>
-    </pedestrian>
-
-    <netedit>
-        <additional-files value="/home/silas/Desktop/InTAS/Simulation/InTAS_E1.add.xml"/>
-    </netedit>
-
-    <report>
-        <aggregate-warnings value="5"/>
-    </report>
-
-</configuration>
--->
-
-<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+<add>
     <e1Detector id="1010_1" lane="172519650_0" pos="1.26" freq="900.00" name="1010" file="InTAS_Detectors_Output.xml" friendlyPos="1"/>
     <e1Detector id="1010_10" lane="172515814#0_1" pos="32.73" freq="900.00" name="1010" file="InTAS_Detectors_Output.xml" friendlyPos="1"/>
     <e1Detector id="1010_11" lane="172515814#0_2" pos="41.98" freq="900.00" name="1010" file="InTAS_Detectors_Output.xml" friendlyPos="1"/>
@@ -237,4 +195,4 @@
     <e1Detector id="8604_5" lane="-611319827_0" pos="375.89" freq="900.00" name="8604" file="InTAS_Detectors_Output.xml" friendlyPos="1"/>
     <e1Detector id="income" lane="-233673422#10_0" pos="48.93" freq="900.00" file="gate.xml" friendlyPos="1"/>
     <e1Detector id="outgoing" lane="233673422#9_0" pos="182.87" freq="900.00" file="gate.xml" friendlyPos="1"/>
-</additional>
+</add>
