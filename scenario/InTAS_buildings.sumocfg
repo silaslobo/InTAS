@@ -3,14 +3,14 @@
 	Author: Silas Lobo
 
 	This program is free software: you can redistribute it and/or modify
-    	it under the terms of the GNU General Public License as published by
+    it under the terms of the GNU General Public License as published by
    	the Free Software Foundation, either version 3 of the License, or
-    	(at your option) any later version.
+    (at your option) any later version.
 -->
 <configuration>
 	<input>
 		<net-file value="ingolstadt.net.xml"/>
-		<route-files value="routes/BusRoutes.flow.xml,routes/InTAS_001.rou.xml,routes/InTAS_002.rou.xml,routes/InTAS_003.rou.xml,routes/InTAS_004.rou.xml,routes/InTAS_005.rou.xml,routes/InTAS_006.rou.xml,routes/InTAS_007.rou.xml,routes/InTAS_008.rou.xml,routes/InTAS_009.rou.xml,routes/InTAS_010.rou.xml,routes/InTAS_011.rou.xml,routes/InTAS_012.rou.xml,routes/InTAS_013.rou.xml,routes/InTAS_014.rou.xml,routes/InTAS_015.rou.xml,routes/InTAS_016.rou.xml,routes/InTAS_017.rou.xml,routes/InTAS_018.rou.xml,routes/InTAS_019.rou.xml,routes/InTAS_020.rou.xml,routes/InTAS_021.rou.xml,routes/InTAS_022.rou.xml"/>
+		<route-files value="routes/ped.rou.xml,BusRoutes.flow.xml,routes/InTAS_001.rou.xml,routes/InTAS_002.rou.xml,routes/InTAS_003.rou.xml,routes/InTAS_004.rou.xml,routes/InTAS_005.rou.xml,routes/InTAS_006.rou.xml,routes/InTAS_007.rou.xml,routes/InTAS_008.rou.xml,routes/InTAS_009.rou.xml,routes/InTAS_010.rou.xml,routes/InTAS_011.rou.xml,routes/InTAS_012.rou.xml,routes/InTAS_013.rou.xml,routes/InTAS_014.rou.xml,routes/InTAS_015.rou.xml,routes/InTAS_016.rou.xml,routes/InTAS_017.rou.xml,routes/InTAS_018.rou.xml,routes/InTAS_019.rou.xml,routes/InTAS_020.rou.xml,routes/InTAS_021.rou.xml,routes/InTAS_022.rou.xml"/>
 		<additional-files value="BusStations.add.xml,InTAS_E1.add.xml,buildings.poly.xml"/>
 	</input>
 	<output>
@@ -27,10 +27,14 @@
 		<route-steps value="200"/>
 		<threads value="10"/>
 		<ignore-junction-blocker value="15"/>
-	    	<time-to-teleport value="300"/>
+	    <time-to-teleport value="300"/>
 		<time-to-teleport.highways value="300"/>
-        	<max-depart-delay value="300"/>
+        <max-depart-delay value="300"/>
 		<default.carfollowmodel value="Krauss"/>
+		<parking.maneuver value="true"/>
+		<pedestrian.model value="striping"/>
+		<pedestrian.striping.stripe-width value="0.55"/>
+		<pedestrian.striping.jamtime value="30"/>
 	</processing>
 	<routing>
 		<routing-algorithm value="dijkstra"/>
@@ -39,10 +43,11 @@
 		<device.rerouting.period value="300" />
 		<device.rerouting.threads value="10"/>
 		<device.rerouting.synchronize value="true"/>
+		<persontrip.transfer.car-walk value="allJunctions"/>
 	</routing>
 	<report>
-        	<verbose value="true"/>
+        <verbose value="true"/>
 		<no-warnings value="true"/>
-	        <log value="InTAS.simulation.log"/>
+	    <log value="InTAS.simulation.log"/>
 	</report>
 </configuration>
