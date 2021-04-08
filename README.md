@@ -1,6 +1,7 @@
 # InTAS
 InTAS is the realistic Ingolstadt traffic scenario for SUMO. This scenario comprises the following features:
 
+- **Now InTAS supports pedestrian simulation**
 - **Modeled and Validated with real traffic numbers**
 - 24 hours of simulation
 - Actual road network based on the city of Ingolstadt
@@ -14,6 +15,8 @@ InTAS is the realistic Ingolstadt traffic scenario for SUMO. This scenario compr
 You can watch [InTAS](https://www.youtube.com/watch?v=UgPeBxXzDHc) presentation for the SUMO User Conference 2020. 
 
 *Developed and tested for SUMO 1.7.0*
+
+*Tested for SUMO 1.8.0*
 
 ## Actual State
 - **Validation:** 24 points of traffic measurment
