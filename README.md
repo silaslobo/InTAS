@@ -15,7 +15,7 @@ InTAS is the realistic Ingolstadt traffic scenario for SUMO. This scenario compr
 You can watch [InTAS](https://www.youtube.com/watch?v=UgPeBxXzDHc) presentation for the SUMO User Conference 2020. 
 
 
-## Tested for the followings versions:
+## Tested for the following versions:
 - [x] SUMO version 1.9.0
 - [x] SUMO version 1.8.0
 - [x] SUMO version 1.7.0
