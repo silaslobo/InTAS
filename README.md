@@ -16,7 +16,10 @@ You can watch [InTAS](https://www.youtube.com/watch?v=UgPeBxXzDHc) presentation 
 
 *Developed and tested for SUMO 1.7.0*
 
-*Tested for SUMO 1.8.0*
+Tested for the followings versions:
+- [x]*SUMO version 1.9.0*
+- [x]*SUMO version 1.8.0*
+- [x]*SUMO version 1.7.0*
 
 ## Actual State
 - **Validation:** 24 points of traffic measurment
