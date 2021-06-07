@@ -25,7 +25,11 @@
 	</time>
 	<processing>
 		<route-steps value="200"/>
-		<threads value="10"/>
+
+        <!-- multi-threading leads to non-deterministic routing decisions, see https://github.com/eclipse/sumo/issues/6319 -->
+        <!-- it's also slightly slower than single-threaded simulation (for now), see https://github.com/eclipse/sumo/issues/6809 -->
+		<!-- <threads value="10"/> -->
+
 		<ignore-junction-blocker value="15"/>
 	    <time-to-teleport value="300"/>
 		<time-to-teleport.highways value="300"/>
@@ -41,7 +45,10 @@
 		<device.rerouting.explicit value= "default_001,default_002,default_003,default_004,default_005,default_006,default_007,default_008,default_009,default_010,default_011,default_012,default_013,default_014,default_015,default_016,default_017,default_018,default_019,default_020,default_021,default_022,random_001,random_002,random_003,random_004,random_005,random_006,random_007,random_008,random_009,random_010,random_011,random_012,random_013,random_014,random_015,random_016,random_017,random_018,random_019,random_020,random_021,random_022"/>
 		<device.rerouting.probability value="0.82"/>
 		<device.rerouting.period value="300" />
-		<device.rerouting.threads value="10"/>
+
+        <!-- see comment regarding multi-threaded simulation above -->
+		<!-- <device.rerouting.threads value="10"/> -->
+
 		<device.rerouting.synchronize value="true"/>
 		<persontrip.transfer.car-walk value="allJunctions"/>
 	</routing>
