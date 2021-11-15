@@ -12,7 +12,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        sumo_build: [ubuntu, ppa, nightly]
+        sumo_build: [ppa, nightly]
+#        sumo_build: [ubuntu, ppa, nightly]
 
     steps:
     - name: Cloning Scenario
@@ -38,7 +39,7 @@ jobs:
     - name: Running Scenario
       run: |
         echo $SUMO_HOME; sumo  # just to check
-        sumo -c scenario/InTAS_buildings.sumocfg -l sumo.log -e 360
+        sumo -c scenario/InTAS_buildings.sumocfg -l sumo.log
 
     - name: Upload Log
       if: ${{ always() }}
