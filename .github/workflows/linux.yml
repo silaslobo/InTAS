@@ -37,6 +37,7 @@ jobs:
         python -c "import sumo; print('SUMO_HOME=' + sumo.SUMO_HOME)" >> $GITHUB_ENV
 
     - name: Running Scenario
+      if: matrix.sumo_build == 'nightly' || github.event_name != 'schedule'
       run: |
         echo $SUMO_HOME; sumo  # just to check
         sumo -c scenario/InTAS_buildings.sumocfg -l sumo.log
