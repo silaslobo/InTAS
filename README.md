@@ -16,6 +16,7 @@ You can watch [InTAS](https://www.youtube.com/watch?v=UgPeBxXzDHc) presentation 
 
 
 ## Tested for the following versions:
+- [x] SUMO version 1.10.0
 - [x] SUMO version 1.9.0
 - [x] SUMO version 1.8.0
 - [x] SUMO version 1.7.0
@@ -24,6 +25,9 @@ You can watch [InTAS](https://www.youtube.com/watch?v=UgPeBxXzDHc) presentation 
 - **Validation:** 24 points of traffic measurment
 - **Simulation of Traffic Light System (TLS):** 20 TLS
 - **Actual Scenario Error (NRMSE):** 0.33
+
+## How to cite:
+S. LOBO, S. NEUMEIER, E. FERNANDEZ, C. FACCHI, ["InTAS - The Ingolstadt Traffic Scenario for SUMO"](https://www.researchgate.net/publication/346302744_InTAS_--_The_Ingolstadt_Traffic_Scenario_for_SUMO). SUMO User Conference Proceedings, 2020, DOI will follow soon
 
 ## How To 
 InTAS can be lauched from de cofiguration file:
