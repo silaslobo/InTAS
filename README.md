@@ -27,7 +27,7 @@ You can watch [InTAS](https://www.youtube.com/watch?v=UgPeBxXzDHc) presentation 
 - **Actual Scenario Error (NRMSE):** 0.33
 
 ## How to cite:
-S. LOBO, S. NEUMEIER, E. FERNANDEZ, C. FACCHI, ["InTAS - The Ingolstadt Traffic Scenario for SUMO"](https://www.researchgate.net/publication/346302744_InTAS_--_The_Ingolstadt_Traffic_Scenario_for_SUMO). SUMO User Conference Proceedings, 2020, DOI will follow soon
+S. LOBO, S. NEUMEIER, E. FERNANDEZ, C. FACCHI, ["InTAS - The Ingolstadt Traffic Scenario for SUMO"](https://www.researchgate.net/publication/346302744_InTAS_--_The_Ingolstadt_Traffic_Scenario_for_SUMO). SUMO User Conference Proceedings, 2020, ISSN 2750-4425, DOI [10.52825](https://doi.org/10.52825/scp.v1i)
 
 ## How To 
 InTAS can be lauched from de cofiguration file:
