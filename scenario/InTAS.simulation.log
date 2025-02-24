@@ -1,0 +1,25 @@
+Loading net-file from 'InTAS_24.net.xml' ... done (1102ms).
+Loading additional-files from 'BusStations.add.xml' ... done (15ms).
+Loading route-files incrementally from 'routes/InTAS_intermodal_updated_v2.rou.xml'
+Loading route-files incrementally from 'routes/pt_lines.flow.xml'
+Loading done.
+Simulation version 1.22.0 started with time: 0.00.
+Simulation ended at time: 86400.00.
+Reason: The final simulation step has been reached.
+Performance:
+ Duration: 508.72s
+ Real time factor: 169.837
+ UPS: 69761.701827
+ UPS-Persons: 722337.611357
+Vehicles:
+ Inserted: 1796 (Loaded: 1797)
+ Running: 3
+ Waiting: 0
+ Teleports: 427 (Collisions: 61, Jam: 12, Yield: 1, Wrong Lane: 414)
+ Emergency Braking: 46
+Persons:
+ Inserted: 15151
+ Running: 168
+ Jammed: 3023
+DijkstraRouter answered 5026960 queries and explored 15.45 edges on average.
+DijkstraRouter spent 6.50s answering queries (0.00ms on average).

@@ -1,0 +1,54 @@
+<!--
+	Ingolstadt Traffic Scenario for SUMO (InTAS)
+	Author: Silas Lobo
+
+	This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+   	the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+-->
+<configuration>
+	<input>
+		<net-file value="InTAS_24.net.xml"/>
+		<route-files value="routes/InTAS_intermodal_updated_v2.rou.xml, routes/pt_lines.flow.xml"/>
+		<additional-files value="BusStations.add.xml"/>
+	</input>
+	<time>
+		<begin value="0"/>
+		<step-length value="0.1"/>
+		<end value="86400"/>
+	</time>
+	
+	<processing>
+		<route-steps value="10"/>
+		<threads value="1"/>
+		<ignore-junction-blocker value="15"/>
+	    <time-to-teleport value="300"/>
+		<time-to-teleport.highways value="300"/>
+		<!--time-to-teleport.ride value="7200"/-->
+        <max-depart-delay value="300"/>
+		<default.carfollowmodel value="Krauss"/>
+		<parking.maneuver value="true"/>
+		<pedestrian.model value="striping"/>
+		<pedestrian.striping.stripe-width value="0.55"/>
+		<pedestrian.striping.jamtime value="30"/>
+	</processing>
+	<routing>
+		<routing-algorithm value="dijkstra"/>		
+		<device.rerouting.probability value="0"/>
+		<device.rerouting.period value="0" />
+		<device.rerouting.threads value="1"/>
+		<device.rerouting.synchronize value="true"/>		
+		<person-device.rerouting.probability value="1.00" />
+		<person-device.rerouting.period value="7200" />		
+	</routing>
+	<report>
+        <verbose value="true"/>
+		<no-warnings value="true"/>
+	    <log value="InTAS.simulation.log"/>
+	</report>
+	<random>
+		<seed value="1337" />
+	</random>
+</configuration>
